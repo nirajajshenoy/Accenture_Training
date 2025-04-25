@@ -9,7 +9,7 @@ cd Fabric-network/
 
 //Build the docker-compose-ca.yaml in the docker folder
 ```
-docker-compose -f docker/docker-compose-ca.yaml up -d
+docker compose -f docker/docker-compose-ca.yaml up -d
 ```
 ```
 sudo chmod -R 777 organizations/
@@ -27,7 +27,7 @@ chmod +x registerEnroll.sh
 
 //Build the docker-compose-2org.yaml in the docker folder
 ```
-docker-compose -f docker/docker-compose-2org.yaml up -d
+docker compose -f docker/docker-compose-2org.yaml up -d
 ```
 
 -------------Generate the genesis block—-------------------------------
