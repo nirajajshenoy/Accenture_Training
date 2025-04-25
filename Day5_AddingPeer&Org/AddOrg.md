@@ -2,7 +2,7 @@
 
 ### Create docker-compose file for new org and run it
 ```
-docker-compose -f docker/docker-compose-ca-org3.yaml up -d
+docker compose -f docker/docker-compose-ca-org3.yaml up -d
 ```
 ### Register and enroll the users for org3
 ```
@@ -30,7 +30,7 @@ configtxgen -printOrg Org3MSP > organizations/peerOrganizations/org3.example.com
 
 Create docker-compose-org3.yaml file within docker folder
 ```
-docker-compose -f docker/docker-compose-org3.yaml up -d
+docker compose -f docker/docker-compose-org3.yaml up -d
 ```
 
 
@@ -189,11 +189,11 @@ peer chaincode query -C $CHANNEL_NAME -n kbaautomobile -c '{"function":"ReadCar"
 ```
 ## To stop the network for peer1org1 & org3 
 ```
-docker-compose -f docker/docker-compose-peer1org1.yaml down
+docker compose -f docker/docker-compose-peer1org1.yaml down
 
-docker-compose -f docker/docker-compose-ca-org3.yaml down
+docker compose -f docker/docker-compose-ca-org3.yaml down
 
-docker-compose -f docker/docker-compose-org3.yaml down
+docker compose -f docker/docker-compose-org3.yaml down
 ```
 
 ## To stop two organization network

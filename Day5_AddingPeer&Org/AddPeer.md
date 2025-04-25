@@ -38,7 +38,7 @@ cp "${PWD}/organizations/peerOrganizations/org1.example.com/peers/peer1.org1.exa
 ```
 ### Create docker-compose for new peer and run it
 ```
-docker-compose -f docker/docker-compose-peer1org1.yaml up -d
+docker compose -f docker/docker-compose-peer1org1.yaml up -d
 ```
 
 ## Peer1 Org1 terminal
