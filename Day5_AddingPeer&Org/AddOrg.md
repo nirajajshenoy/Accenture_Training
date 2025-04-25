@@ -178,7 +178,7 @@ Execute the following command with the correct Package ID
 export CC_PACKAGE_ID=$(peer lifecycle chaincode calculatepackageid KBA-Automobile.tar.gz)
 ```
 ```
-peer lifecycle chaincode approveformyorg -o localhost:7050 --ordererTLSHostnameOverride orderer.example.com --tls --cafile $ORDERER_CA --channelID $CHANNEL_NAME --name kbaautomobile --version 1.0 --package-id $CC_PACKAGE_ID --sequence 1 --collections-config ../Chaincode/collection.json --waitForEvent
+peer lifecycle chaincode approveformyorg -o localhost:7050 --ordererTLSHostnameOverride orderer.example.com --tls --cafile $ORDERER_CA --channelID $CHANNEL_NAME --name kbaautomobile --version 1.0 --package-id $CC_PACKAGE_ID --sequence 1 --collections-config ../Chaincode/KBA-Automobile/collection.json --waitForEvent
 ```
 ```
 peer lifecycle chaincode querycommitted --channelID $CHANNEL_NAME --name kbaautomobile --cafile $ORDERER_CA
